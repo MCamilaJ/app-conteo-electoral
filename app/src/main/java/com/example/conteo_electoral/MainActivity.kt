@@ -21,11 +21,6 @@ class MainActivity : ComponentActivity() {
         btnValidar.setOnClickListener {
             val nombre = inputNombre.text.toString()
             val edad = inputEdad.text.toString()
-            val enviar = Intent(this, VotacionActivity::class.java)
-            val totalElectores = findViewById<EditText>(R.id.inpTotalElectores).text.toString()
-            enviar.putExtra("total", totalElectores)
-            startActivity(enviar)
-
 
             if(nombre.isEmpty() || edad.isEmpty()){
                 Toast.makeText(this, "Por favor completa los campos", Toast.LENGTH_SHORT).show()
@@ -41,6 +36,13 @@ class MainActivity : ComponentActivity() {
                         startActivity(intent)
                     }
                     alert.show()
+
+                    val totalElectores = findViewById<EditText>(R.id.inpTotalElectores).text.toString()
+
+                    val enviar = Intent(this, VotacionActivity::class.java)
+
+                    enviar.putExtra("total", totalElectores)
+                    startActivity(enviar)
                 }else{
                     val alert = AlertDialog.Builder(this)
                     alert.setTitle("Acceso Denegado")
