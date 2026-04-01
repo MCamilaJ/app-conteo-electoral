@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">conteo-electoral</string>
+    <string name="btn_validar">Validar información</string>
+    <string name="inp_nombre">Escriba su nombre</string>
+    <string name="inp_edad">Escriba su edad</string>
+    <string name="lbl_bienvenido">Bienvenido</string>
+    <string name="lbl_indicacion">Señor usuario, por favor ingrese la siguiente información</string>
+    <string name="lbl_titulo">Seleccione su candidato</string>
+    <string name="btn_feid">Votar</string>
+    <string name="btn_maluma">Votar</string>
+    <string name="btn_karol">Votar</string>
+    <string name="lbl_carolina">Carolina Giraldo</string>
+    <string name="lbl_salomon">Salomon Villada</string>
+    <string name="lbl_juan">Juan Luis</string>
+    <string name="img_maluma">Candidato Maluma</string>
+    <string name="img_feid">Candidato Feid</string>
+    <string name="content_btn_feid">Boton para votar por Feid</string>
+    <string name="content_btn_maluma">Boton para votar por Maluma</string>
+    <string name="content_img_carolina">Candidata Carolina</string>
+    <string name="content_btn_carolina">Boton para votar por Karol</string>
+    <string name="btn_finalizar">Finalizar</string>
+    <string name="inp_total_electores">Total electores</string>
+</resources>

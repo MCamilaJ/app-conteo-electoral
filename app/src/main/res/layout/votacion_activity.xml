@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0efd2">
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/lbl_titulo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/feid"
+        android:layout_width="189dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/img_feid"
+        android:src="@drawable/feid"
+        app:layout_constraintEnd_toStartOf="@+id/maluma"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo" />
+
+    <ImageView
+        android:id="@+id/maluma"
+        android:layout_width="167dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/img_maluma"
+        android:src="@drawable/maluma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo" />
+
+    <Button
+        android:id="@+id/btnFeid"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="#384252"
+        android:contentDescription="@string/content_btn_feid"
+        android:text="@string/btn_feid"
+        android:textAllCaps="false"
+        android:textColor="#DEDEDE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSalomon" />
+
+    <Button
+        android:id="@+id/btnMaluma"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="#384252"
+        android:contentDescription="@string/content_btn_maluma"
+        android:text="@string/btn_maluma"
+        android:textAllCaps="false"
+        android:textColor="#DEDEDEFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toEndOf="@+id/btnFeid"
+        app:layout_constraintTop_toBottomOf="@+id/lblJuan" />
+
+    <ImageView
+        android:id="@+id/karol"
+        android:layout_width="164dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="328dp"
+        android:contentDescription="@string/content_img_carolina"
+        android:src="@drawable/karol_g"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo" />
+
+    <Button
+        android:id="@+id/btnKarol"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="#384252"
+        android:contentDescription="@string/content_btn_carolina"
+        android:text="@string/btn_karol"
+        android:textAllCaps="false"
+        android:textColor="#DEDEDEFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCarolina" />
+
+    <TextView
+        android:id="@+id/lblCarolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/lbl_carolina"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/karol" />
+
+    <TextView
+        android:id="@+id/lblSalomon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lbl_salomon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feid" />
+
+    <TextView
+        android:id="@+id/lblJuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_juan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toEndOf="@+id/lblSalomon"
+        app:layout_constraintTop_toBottomOf="@+id/maluma" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="221dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="692dp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="#384252"
+        android:text="@string/btn_finalizar"
+        android:textAllCaps="false"
+        android:textColor="#E7E0E0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

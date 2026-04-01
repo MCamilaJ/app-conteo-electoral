@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0efd2"
+    android:importantForAutofill="no"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/lblBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/lbl_bienvenido"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblIndicacion"
+        android:layout_width="394dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/lbl_indicacion"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBienvenido" />
+
+    <EditText
+        android:id="@+id/inpNombre"
+        android:layout_width="288dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:hint="@string/inp_nombre"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblIndicacion" />
+
+    <EditText
+        android:id="@+id/inpEdad"
+        android:layout_width="288dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="edad"
+        android:ems="10"
+        android:hint="@string/inp_edad"
+        android:importantForAutofill="yes"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inpNombre" />
+
+    <Button
+        android:id="@+id/btnValidar"
+        android:layout_width="203dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="#384252"
+        android:padding="10dp"
+        android:text="@string/btn_validar"
+        android:textAllCaps="false"
+        android:textColor="#DEDEDEFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inpEdad" />
+
+    <EditText
+        android:id="@+id/inpTotalElectores"
+        android:layout_width="288dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="Total electores"
+        android:ems="10"
+        android:hint="@string/inp_total_electores"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inpEdad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
